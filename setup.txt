@@ -1,0 +1,17 @@
+En este archivo se explicara los pasos para que se corra el proyecto correctamente.
+
+1. En http://localhost/phpmyadmin/ cree una base de datos llama "tiendavirtual"
+2. Dele los privilegios al usuario con el que va a conectarse a la base de datos,
+   puede ser desde phpmyadmin o desde la terminal con el comando
+   GRANT ALL PRIVILEGES ON tiendavirtual.* TO 'user'@localhost WITH GRANT OPTION;
+   siendo 'user' el usuario con el que va a conectarse	
+3. En el archivo .env del proyecto, configure su puerto, el nombre de usuario que 
+   escogió y la contraseña del mismo. Luego desde la terminal ejecute el comnado
+   php artisan migrate
+4. Desde la terminal, ejecute los siguientes comandos para llenar la base de datos
+   o llenelos desde phpmyadmin 
+   composer dump-autoload
+   php artisan db:seed
+   (este paso es opcional pero se recomienda para observar que si devuelve los registros)
+	
+5.Ejecute el comando php artisan serve Para ingresar al proyecto desde un browser, dirijase al localhost o http://127.0.0.1:8000/

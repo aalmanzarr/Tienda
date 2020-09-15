@@ -1,0 +1,21 @@
+.card-header{
+    font-weight: bold;
+}
+
+.description{
+    margin-top:10px;
+    width: 380px;
+    height: 100px;
+    padding: 30px 10px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    resize: none;
+  }
+
+  .form {
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    resize: none;
+  }
+
+  
